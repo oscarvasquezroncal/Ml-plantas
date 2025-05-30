@@ -16,7 +16,7 @@ transform = transforms.Compose([
 ])
 
 clases = ["Healthy", "Diseased"]
-
+#main.v1
 @app.post("/predict")
 async def predict(file: UploadFile = File(...)):
     image = Image.open(file.file).convert("RGB")
